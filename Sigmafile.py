@@ -7,7 +7,9 @@ public class PassiveBot
 
     public String response(String statement){
         String resp = "";
-        if(findKeyword(statement, ""
+        if(findKeyword(statement, "poop"){
+		resp = "i love poop";
+	}
 
     }
 
@@ -33,8 +35,6 @@ public class PassiveBot
 	            after = phrase.substring(position + goal.length(),
 	                                     position + goal.length() + 1).toLowerCase();
 	        }
-	        // uncomment to view the values of the variables
-	        // System.out.println( " psn: " + position + " before: '" + before + "' after: '" + after + "'");
 	        if (((before.compareTo ("a") < 0 ) || (before.compareTo("z") > 0)) &&
 	            ((after.compareTo ("a") < 0 ) || (after.compareTo("z") > 0)))     
             {
@@ -43,6 +43,12 @@ public class PassiveBot
             position = phrase.indexOf(goal.toLowerCase(), position + 1);
 	    }
 	    return -1;
+	}
+
+
+private int findKeyword(String statement, String goal)
+	{
+	    return findKeyword(statement, goal, 0);
 	}
 	
 
