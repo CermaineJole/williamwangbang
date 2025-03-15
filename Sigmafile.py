@@ -7,9 +7,10 @@ public class PassiveBot
 
     public String response(String statement){
         String resp = "";
-        if(findKeyword(statement, "poop"){
+        if(findKeyword(statement, "poop")>=0 && findKeyword(statement, "sigma")>=0){
 		resp = "i love poop";
 	}
+	
 
     }
 
