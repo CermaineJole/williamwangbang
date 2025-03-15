@@ -12,6 +12,35 @@ public class PassiveBot
 	}
 
     }
+    public String response(String statement){
+        String resp = "";
+        if(findKeyword(statement, "brush") >0 && (findKeyword(statement, "brushed") >0 && (findKeyword(statement, "teeth") >0 {
+		resp = "wow good job remembering to brush your teeth, thats definitely a skill.";
+	}
+
+    }
+    public String response(String statement){
+        String resp = "";
+        if(findKeyword(statement, "poop"){
+		resp = "i love poop";
+	}
+
+    }
+    public String response(String statement){
+        String resp = "";
+        if(findKeyword(statement, "poop"){
+		resp = "i love poop";
+	}
+
+    }
+    public String response(String statement){
+        String resp = "";
+        if(findKeyword(statement, "poop"){
+		resp = "i love poop";
+	}
+
+    }
+
 
     
 
