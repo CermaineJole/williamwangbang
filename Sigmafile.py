@@ -10,7 +10,7 @@ public class PassiveBot
         if(findKeyword(statement, "poop")>=0 && findKeyword(statement, "sigma")>=0){
 		resp = "i love poop";
 	}
-	
+	return resp;
 
     }
 
