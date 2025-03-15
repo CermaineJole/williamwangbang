@@ -51,6 +51,31 @@ private int findKeyword(String statement, String goal)
 	{
 	    return findKeyword(statement, goal, 0);
 	}
+
+public String getAfter(String statement, String keyword) {
+        int keywordPosition = findKeyword(statement, keyword);
+        if (keywordPosition == -1) {
+            return ""; // Keyword not found
+        }
+
+        // Find the start of the next word
+        int nextWordStart = keywordPosition + keyword.length();
+        while (nextWordStart < statement.length() && !Character.isLetter(statement.charAt(nextWordStart))) {
+            nextWordStart++;
+        }
+
+        // Find the end of the next word
+        int nextWordEnd = nextWordStart;
+        while (nextWordEnd < statement.length() && Character.isLetter(statement.charAt(nextWordEnd))) {
+            nextWordEnd++;
+        }
+
+        if (nextWordStart >= statement.length() || nextWordEnd <= nextWordStart) {
+            return ""; // No word after the keyword
+        }
+
+        return statement.substring(nextWordStart, nextWordEnd);
+    }
 	
 
 
