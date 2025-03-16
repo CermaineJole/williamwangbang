@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class test {
     public static void main(String[] args) {
         PassiveBot sigma = new PassiveBot();
-        sigma.greeting();
+        System.out.println(sigma.greeting());
         System.out.print("You: ");
         Scanner input = new Scanner(System.in);
         String rah = input.nextLine();
