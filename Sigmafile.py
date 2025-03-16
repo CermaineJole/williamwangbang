@@ -20,6 +20,14 @@ public class PassiveBot
 		resp = "How do you not know what that is";
 	}
 
+	else if(findKeyword(statement, "skibidi")>0){
+		resp = "toilet";
+	}
+
+	else if(findKeyword(statement, "hey")>0){
+		resp = "i hate you";
+	}
+
 	else{
 		resp ="LEBROOOOOOOOOOOOOOOOOOOOOOOOOOON"
 		
