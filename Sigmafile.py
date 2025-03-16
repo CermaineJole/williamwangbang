@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class PassiveBot {
     public String greeting() {
-        return "bro ts pmo jst strt askn u nt shkspr bru";
+        return "Just ask away bru (say bye to end)";
     }
 
     public String response(String statement) {
