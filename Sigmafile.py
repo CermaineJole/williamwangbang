@@ -10,12 +10,16 @@ public class PassiveBot
     if(findKeyword(statement, "help")>=0&&findKeyword(statement, "with")>=0){
 		resp = "But that is so easy";
 	}
-	else if(findKeyword(statement, "weather")>0){
+    	else if(findKeyword(statement, "weather")>0){
 		resp = "Bro talkin bout weather say something better"
 	}
 	else if(findKeyword(statement, "who")>0&&findKeyword(statement,"you")){
 		resp = "I am the GOAT"
 	}
+	else if(findKeyword(statement, "what")>0){
+		resp = "How do you not know what that is";
+	}
+
 	else{
 		resp ="LEBROOOOOOOOOOOOOOOOOOOOOOOOOOON"
 		
